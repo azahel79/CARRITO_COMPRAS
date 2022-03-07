@@ -1,0 +1,48 @@
+.ctr_icon{
+   position: relative;
+}
+
+.ctr_icon .contador_compras{
+    position:absolute;
+       top: 0px;
+       right: -13px;
+       width: 20px;
+       border-radius: 50%;
+       height: 20px;
+        background:  #fff;  
+
+}
+
+.ctr_icon .contador_compras span{
+    color: #000;
+    font-weight: bold;
+}
+
+.icon{
+    color: #ff5100;
+}
+
+
+
+.lista_compras{
+     width: 500px;
+     position: absolute;
+     top: 55px;
+     right: 40px;
+     z-index: 133232;
+      background: #fff;
+       clip-path: circle(0 at center); 
+       transition: .5s ease;   
+}
+
+.ctr_icon > input:checked ~ .lista_compras{
+    clip-path:circle(100% at center);
+}
+.eliminar_boton{
+    color: #000;
+}
+
+.btn_compra{
+    background: #ff5100;
+
+}
